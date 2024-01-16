@@ -66,7 +66,7 @@ class LibroController extends Controller
 
             // Asigna la URL de la imagen a los datos del libro
             $imagenUrl = $firebase_storage_path . $name;
-            $baserUrl = 'https://firebasestorage.googleapis.com/v0/b/appbooks-4caf1.appspot.com/o/';
+            $baserUrl = 'https://firebasestorage.googleapis.com/v0/b/appbookistgdev.appspot.com/o/';
             $urlFirebase = $baserUrl .  urlencode($imagenUrl) . '?alt=media';
             $datos['imagen'] = $urlFirebase;
 
