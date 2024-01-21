@@ -166,10 +166,9 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/home') }}">
+                <a class="navbar-brand" href="{{ url('/pantalla-principal') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
-                @if( !Auth::guest() )
                 <a class="navbar-brand" href="{{ url('/listado-libro') }}">
                     Libro
                 </a>
@@ -191,7 +190,6 @@
                             <!-- Agrega más opciones de mantenimiento aquí -->
                         </div>
                     </div>
-                    @endif
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
