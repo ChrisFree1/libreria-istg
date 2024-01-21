@@ -56,7 +56,7 @@ return [
     */
 
    // 'url' => env('APP_URL', 'http://localhost'), // cambio para permitir la descarga de la plantilla en la web
-   'url' => env('APP_URL', 'http://186.46.233.122'),
+   'url' => env('APP_URL', 'http://localhost'),
 
     'asset_url' => env('ASSET_URL'),
 
