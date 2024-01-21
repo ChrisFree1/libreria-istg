@@ -31,7 +31,6 @@ Route::resource('/password/reset', App\Http\Controllers\Auth\ResetController::cl
 
 
 
-Route::middleware(['fireauth'])->group(function () {
 
 // --------------------------------- VENTANA PRINCIPAL --------------------------------------------
 
@@ -213,4 +212,3 @@ Route::get('/buscar-parametro',[ParametroController::class,'buscarParametro'])->
 
 Route::post('/verificar-codigo-unico',[ParametroController::class,'verificarCodigoUnico'])->name('verificar-codigo-unico');
 
-});
